@@ -44,12 +44,12 @@ Sign Kit is a comprehensive web application designed to bridge the communication
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/spectre900/Sign-Kit-An-Avatar-based-ISL-Toolkit.git
+   git clone https://github.com/AmbrishJr/ISL-APP-WITH-3D-AVATAR-.git
    ```
 
 2. **Navigate to the project directory**
    ```bash
-   cd Sign-Kit-An-Avatar-based-ISL-Toolkit
+   cd ISL-APP-WITH-3D-AVATAR-
    ```
 
 3. **Install dependencies**
