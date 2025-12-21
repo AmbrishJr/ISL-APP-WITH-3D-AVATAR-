@@ -1,14 +1,8 @@
 {
-  "name": "sign-kit-root",
+  "name": "sign3d-root",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "cd client && npm start",
-    "start": "cd client && npm start",
-    "build": "cd client && npm run build",
-    "test": "cd client && npm test"
-  },
-  "workspaces": [
-    "client"
-  ]
+    "vercel-build": "cd client && npm install && npm run build"
+  }
 }
