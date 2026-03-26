@@ -7,15 +7,11 @@ import Masthead from "../Components/Home/Masthead";
 
 function Home() {
   return (
-    <div>
-
+    <main className="page enter">
       <Masthead />
-
       <Intro />
-      
       <Services />
-      
-    </div>
+    </main>
   );
 }
 

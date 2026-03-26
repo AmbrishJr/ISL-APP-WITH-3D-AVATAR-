@@ -7,98 +7,63 @@ import imgVideos from "../../Assets/videos.png";
 function Services() {
   return (
     <section id="services">
-      <div className="container">
-        <div className="row mt-5">
-          <div
-            className="col-md-12 d-flex justify-content-center align-items-center"
-            style={{ flexDirection: "column" }}
-          >
-            <div className="h2 section-heading">Our Services</div>
-            <div className="col-lg-4 divider my-2" />
-            <div className="text-center normal-text">
-              A comprehensive and aesthetic Indian Sign Language toolkit. A
-              minimalist yet informative interface. Wide range of features
-              containing different functionalities that are necessary to work
-              with ISL. What else do you need anyway! We have everything wrapped
-              up here! <br /> Dive into our diverse services and let us know
-              about your experience!
-            </div>
+      <div className="section">
+        <div className="container-narrow">
+          <div className="text-center">
+            <h2 className="section-title">Services</h2>
+            <p className="section-lead">
+              Pick a workflow and start instantly — built to stay clean, focused, and easy to use.
+            </p>
           </div>
-        </div>
-        <div className="card-deck">
-          <div className="row">
-            <div className="col-lg-4 mt-5">
-              <div className="card col-lg-12 h-100 d-flex flex-column justify-content-between card-background">
-                <img className="card-img-top" src={imgConvert} alt="Convert Clipart" />
-                <div className="card-body">
-                  <h5 className="card-title">Convert</h5>
-                  <p className="card-text">
-                    Want to convert audio or text into Indian Sign Language?
-                    Then, you are in the right place! Provide your audio by
-                    speaking into your mic or type the text that you want to
-                    convert into ISL and within a few clicks watch the magic
-                    happen!
-                  </p>
-                </div>
-                <div className="card-footer p-0 m-0" style={{ border: "none" }}>
-                  <Link
-                    to="/sign-kit/convert"
-                    className="btn btn-info w-100 p-3"
-                    style={{ fontSize: "large" }}
-                  >
-                    EXPLORE NOW!
-                  </Link>
-                </div>
+
+          <div className="grid-3">
+            <article className="surface-card service-card">
+              <img className="service-img" src={imgConvert} alt="Convert speech or text to ISL" loading="lazy" />
+              <div className="service-body">
+                <h3 className="service-title">Convert</h3>
+                <p className="service-desc">
+                  Speak or type a phrase and watch the avatar translate it into ISL.
+                </p>
+                <div className="service-meta">Try a phrase in 10 seconds</div>
               </div>
-            </div>
-            <div className="col-lg-4 mt-5">
-              <div className="card col-lg-12 h-100 d-flex flex-column justify-content-between card-background">
-                <img className="card-img-top" src={imgLearnSign} alt="Learn Sign Clipart" />
-                <hr className="m-0"></hr>
-                <div className="card-body">
-                  <h5 className="card-title">Learn Sign</h5>
-                  <p className="card-text">
-                    Curious about Indian Sign Language? Then, learn ISL from us!
-                    Select a sign from the list, watch it as many times as you
-                    want and learn ISL. Learning something is always a good
-                    thing, you know!
-                  </p>
-                </div>
-                <div className="card-footer p-0 m-0" style={{ border: "none" }}>
-                  <Link
-                    to="/sign-kit/learn-sign"
-                    className="btn btn-info w-100 p-3"
-                    style={{ fontSize: "large" }}
-                  >
-                    EXPLORE NOW!
-                  </Link>
-                </div>
+              <div className="service-footer">
+                <Link to="/sign-kit/convert" className="btn btn-brand btn-cta pressable">
+                  Start Converting
+                </Link>
               </div>
-            </div>
-            <div className="col-lg-4 mt-5">
-              <div className="card col-lg-12 h-100 d-flex flex-column justify-content-between card-background">
-                <img className="card-img-top" src={imgVideos} alt="Videos Clipart" />
-                <div className="card-body">
-                  <h5 className="card-title">Videos</h5>
-                  <p className="card-text">
-                    Interested in creating wonderful videos using Indian Sign
-                    Language? Upload your transcript as a text file, type your
-                    text in the provided area or speak through your mic and the
-                    system will automatically create a video using ISL for your
-                    content! Share your vidoes with the entire community!
-                  </p>
-                </div>
-                <div className="card-footer p-0 m-0" style={{ border: "none" }}>
-                  <Link
-                    to="/sign-kit/all-videos"
-                    className="btn btn-info w-100 p-3"
-                    style={{ fontSize: "large" }}
-                  >
-                    EXPLORE NOW!
-                  </Link>
-                </div>
+            </article>
+
+            <article className="surface-card service-card">
+              <img className="service-img" src={imgLearnSign} alt="Learn and practice ISL signs" loading="lazy" />
+              <div className="service-body">
+                <h3 className="service-title">Learn Signs</h3>
+                <p className="service-desc">
+                  Practice alphabets and common words with quick replay and speed controls.
+                </p>
+                <div className="service-meta">Practice A–Z and key words</div>
               </div>
-            </div>
+              <div className="service-footer">
+                <Link to="/sign-kit/learn-sign" className="btn btn-surface btn-cta pressable">
+                  Start Learning
+                </Link>
+              </div>
+            </article>
+
+            <article className="surface-card service-card">
+              <img className="service-img" src={imgVideos} alt="Create and browse ISL videos" loading="lazy" />
+              <div className="service-body">
+                <h3 className="service-title">Videos</h3>
+                <p className="service-desc">
+                  Create ISL videos from text, speech, or files — then share them using a video ID.
+                </p>
+                <div className="service-meta">Create and share in minutes</div>
+              </div>
+              <div className="service-footer">
+                <Link to="/sign-kit/all-videos" className="btn btn-surface btn-cta pressable">
+                  Explore Videos
+                </Link>
+              </div>
+            </article>
           </div>
         </div>
       </div>

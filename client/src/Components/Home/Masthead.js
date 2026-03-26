@@ -1,31 +1,58 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ybotPreview from "../../Models/ybot/ybot.png";
 
 function Masthead() {
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center home-gradient">
-      <div
-        className="row d-flex justify-content-center align-items-center"
-        style={{ flexDirection: "column" }}
-      >
-        <div className="col-lg-7 text-white font-weight-bold display-1 text-center">
-          Welcome to ISL Genie!
-        </div>
-        <div className="col-lg-4 divider my-4" />
-        <div
-          className="col-lg-7 container text-white-50 lead text-center"
-          style={{ fontSize: "5rem !important" }}
-        >
-          The complete toolkit for Indian Sign Language. Our application enables seamless translation between English to ISL and Hindi to ISL, and vice versa. Explore our range of
-          features which have been carefully designed keeping in mind the
-          specific needs of the hearing-impaired community and those learning Indian Sign Language.
-        </div>
-        <div className="d-flex justify-content-center mt-5">
-          <a className="btn btn-info btn-lg px-3" href="#intro">
-            Get Started <i className="fa fa-angle-down" />
-          </a>
+    <header className="hero">
+      <div className="container-narrow">
+        <div className="hero-grid">
+          <div>
+            <span className="eyebrow">3D Avatar • ISL Toolkit</span>
+            <h1 className="hero-title">ISL Genie</h1>
+            <p className="hero-subtitle">
+              Convert speech and text into Indian Sign Language.
+            </p>
+            <p className="hero-subtitle" style={{ marginTop: "-0.5rem" }}>
+              Translate English/Hindi to ISL, practice common signs, and create shareable ISL videos.
+            </p>
+
+            <div className="hero-actions">
+              <Link to="/sign-kit/convert" className="btn btn-brand pressable">
+                Start Converting
+              </Link>
+              <Link to="/sign-kit/learn-sign" className="btn btn-surface pressable">
+                Learn Signs
+              </Link>
+              <a href="#intro" className="btn btn-surface pressable">
+                Explore Features
+              </a>
+            </div>
+            <div className="helper-text">No signup. Works in your browser.</div>
+          </div>
+
+          <aside className="surface-card preview-card">
+            <div className="preview-header">
+              <div style={{ fontWeight: 700 }}>Preview</div>
+              <div className="chips" aria-label="Key features">
+                <span className="chip">Speech</span>
+                <span className="chip">Text</span>
+                <span className="chip">Videos</span>
+              </div>
+            </div>
+            <img
+              src={ybotPreview}
+              className="avatar-preview"
+              alt="3D avatar preview"
+              loading="lazy"
+            />
+            <div className="helper-text" style={{ marginBottom: 0 }}>
+              A clean, avatar-first experience designed for clarity.
+            </div>
+          </aside>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -3,21 +3,25 @@ import React from "react";
 function Intro() {
   return (
     <section id="intro">
-      <div className="container">
-        <div className="row my-5">
-          <div
-            className="col-md-12 d-flex justify-content-center align-items-center"
-            style={{ flexDirection: "column" }}
-          >
-            <div className="h2 section-heading">We've what you need!</div>
-            <div className="col-lg-4 divider my-2" />
-            <div className="text-center normal-text">
-              A comprehensive and aesthetic Indian Sign Language toolkit. A
-              minimalist yet informative interface. Wide range of features
-              containing different functionalities that are necessary to work
-              with ISL. What else do you need anyway! We have everything wrapped
-              up here! <br /> Dive into our diverse services and let us know
-              about your experience!
+      <div className="section">
+        <div className="container-narrow text-center">
+          <h2 className="section-title">Everything you need for ISL</h2>
+          <p className="section-lead">
+            A simple, avatar-first toolkit for translation, practice, and creating shareable ISL videos.
+          </p>
+
+          <div className="grid-3" role="list">
+            <div className="surface-card mini-card" role="listitem">
+              <div className="mini-title">Convert instantly</div>
+              <p className="mini-text">Speak or type, then watch the avatar sign.</p>
+            </div>
+            <div className="surface-card mini-card" role="listitem">
+              <div className="mini-title">Learn by practice</div>
+              <p className="mini-text">Explore alphabets and common words with replay.</p>
+            </div>
+            <div className="surface-card mini-card" role="listitem">
+              <div className="mini-title">Create and share</div>
+              <p className="mini-text">Generate videos and share them using a video ID.</p>
             </div>
           </div>
         </div>
